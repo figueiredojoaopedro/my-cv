@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - João Pedro de Figueiredo</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .resume {
+        background: white;
+        width: 21cm;
+        min-height: 29.7cm;
+        padding: 2cm;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1,
+      h2,
+      h3 {
+        margin-top: 0;
+      }
+      h1 {
+        text-align: center;
+      }
+      .contact-info {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .contact-info p {
+        margin: 5px 0;
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+      .section h2 {
+        border-bottom: 2px solid #333;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      .print-button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      @media print {
+        body {
+          background: none;
+          padding: 0;
+        }
+        .print-button {
+          display: none;
+        }
+        .resume {
+          box-shadow: none;
+          margin: 0;
+          width: auto;
+          min-height: auto;
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="resume">
+      <h1>João Pedro de Figueiredo</h1>
+      <div class="contact-info">
+        <p>São Paulo, Brazil</p>
+        <p>defigueiredojoaopedro@gmail.com</p>
+        <p>+55 11 99004 0694</p>
+        <p>
+          <a href="http://www.figueiredojoaopedro02.com"
+            >www.figueiredojoaopedro02.com</a
+          >
+        </p>
+        <p>
+          <a href="https://github.com/figueiredojoaopedro"
+            >github.com/figueiredojoaopedro</a
+          >
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Summary</h2>
+        <p>
+          Full-stack engineer with 4+ years of experience building high
+          performance scalable web applications. Proven track record
+          contributing to engineering excellence at an S&P 500 company.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Experience</h2>
+        <h3>Software Engineer</h3>
+        <p>
+          <strong>Automatic Data Processing - ADP</strong> | São Paulo, Brazil |
+          June 2022 – Present
+        </p>
+        <ul>
+          <li>
+            Designed and implemented back-end solutions using Node.js, creating
+            API’s, automating jobs for multiple internal teams and projects.
+          </li>
+          <ul>
+            <li>
+              Cron jobs to create tickets after chatbot overflow, increasing
+              customer satisfaction by 60%.
+            </li>
+            <li>
+              API’s endpoints to attend Business Intelligence team necessities.
+            </li>
+            <li>
+              Ticket screening automation to prioritize support tickets
+              according to employee seniority, tenure, and expertise. Freed up
+              100% the manual work of ticket triage.
+            </li>
+          </ul>
+          <li>
+            Built dynamic front-end platforms with React.js, delivering
+            intuitive user interfaces for data curation website.
+          </li>
+          <ul>
+            <li>
+              Web app with tables and filters for visualization of the AI's
+              solutions data, improving curation data team satisfaction by 60%.
+            </li>
+            <li>
+              Web app for managers to control how many tickets analysts must
+              respond to on the working day, increasing their sight over
+              analysts work on 100%.
+            </li>
+            <li>
+              Test and answer key to analyze if AI solutions respond correctly
+              according to registered questions, decreasing production bugs by
+              95%.
+            </li>
+            <li>
+              Calendar application for the CX team to visualize when
+              notifications will go live.
+            </li>
+          </ul>
+          <li>
+            Developed a chatbot notification system for Brazil's chatbot,
+            ensuring timely updates and management of client-side tasks. Each
+            notification live achieved approximately 20,000 visualizations.
+          </li>
+          <li>
+            Developed and deployed serverless applications on AWS, leveraging
+            Lambda, API Gateway, and Dynamo DB to ensure high availability.
+          </li>
+          <li>
+            Implemented projects using AWS CDK for better deployment of
+            applications, decreasing deployment issues by 97%.
+          </li>
+          <li>
+            Use of IBM Watson Assistant to build chatbot solutions for the ADP
+            Brazil and Chile, client's adoption over 45% and 97% client
+            satisfaction.
+          </li>
+          <li>
+            Sustained AI solution to read and answer tickets automatically with
+            IBM Watson - trained IBM Watson model for 23% of First Call
+            Resolution.
+          </li>
+          <li>
+            Worked on international projects, collaborating with global teams to
+            deliver customized software solutions.
+          </li>
+          <li>
+            Migration of 100% of a knowledge base hosted in a third party
+            solution to EKM - local AI first solution for knowledge management.
+          </li>
+          <li>
+            I implemented a system for prioritizing tickets requested via
+            chatbot - resulting in 60% fewer customer service requests.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Projects</h2>
+        <h3>Easy Video Editor (easy-video-editor)</h3>
+        <ul>
+          <li>
+            Developed simple video editor ran by command line interface to:
+          </li>
+          <ul>
+            <li>Join multiple MP4 videos into a single file</li>
+            <li>
+              Cut videos at specific timestamps to create multiple segments
+            </li>
+            <li>Process videos efficiently using FFmpeg</li>
+          </ul>
+          <li><strong>Tools Used:</strong> Node.js, ffmpeg, fluent-ffmpeg</li>
+        </ul>
+
+        <h3>TTS-GEN</h3>
+        <ul>
+          <li>
+            Simple text-to-speach app to generate audios in any language using
+            Coqui TTS model
+          </li>
+          <li>
+            <strong>Tools:</strong> Coqui TTS, NodeJS, FastAPI, Python, Docker,
+            Gen AI
+          </li>
+        </ul>
+
+        <h3>casarnos.com.br</h3>
+        <ul>
+          <li>
+            It is still being developed as a SaaS. It helps couples to create
+            their wedding gift and attendance list, also online invites for
+            their ceremony.
+          </li>
+          <li>
+            <strong>Tools:</strong> Node.js, Next.JS. Postgres, resend, AWS RDS,
+            Vercel, Docker, SQL, tailwind.css and framer-motion.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Technologies</h2>
+        <p><strong>Languages:</strong> C#, SQL, JavaScript, NodeJS, Python</p>
+        <p>
+          <strong>Technologies:</strong> Next.js, React, Node.js, Microsoft SQL
+          Server, Postgres, Dynamo DB, Redis, AWS Lambda, S3, AWS CDK, IBM
+          Watson, AWS API Gateway, AWS Code Build, git, MongoDB, Docker,
+          Cloudant, IBM logs, AWS Cloudwatch, AWS Event Bridge.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Education</h2>
+        <p><strong>Universidade Anhembi Morumbi</strong></p>
+        <p>BS in Computer Science | Jul 2021 – Jun 2025</p>
+        <ul>
+          <li>
+            Coursework: Compilers, Calculus, Physics, Analytical Geometry,
+            Graphs, OOP, Algorithms, Data Structures and Algorithms
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <button class="print-button" onclick="window.print()">
+      Print / Download
+    </button>
+  </body>
+</html>

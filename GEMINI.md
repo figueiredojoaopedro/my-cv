@@ -84,9 +84,10 @@ casarnos.com.br casarnos.com.br 2
 ◦ It is still being developed as a SaaS. It helps couples to create their wedding gift and attendance
 list, also online invites for their ceremony.
 ◦ Tools: Node.js, Next.JS. Postgres, resend, AWS RDS, Vercel, Docker, SQL, tailwind.css and framer-motion.
+
 Technologies
 Languages: C#, SQL, JavaScript, NodeJS, Python
-Technologies: Next.js, React, Node.js, Microsoft SQL Server, Postgres, Dynamo DB, AWS Lambda, S3, AWS
+Technologies: Next.js, React, Node.js, Microsoft SQL Server, Postgres, Dynamo DB, AWS Lambda, S3, AWS, Redis
 CDK, IBM Watson, AWS API Gateway, AWS Code Build, git, MongoDB, Docker, Cloudant, IBM logs, AWS
 Cloudwatch, AWS Event Bridge.
 Education
