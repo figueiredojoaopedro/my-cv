@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV - João Pedro de Figueiredo</title>
     <style>
+      .resume-name {
+        font-size: large;
+        font-weight: 500;
+      }
       body {
         font-family: sans-serif;
         background: #f0f0f0;
@@ -31,16 +35,23 @@
         text-align: center;
       }
       .contact-info {
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        white-space: nowrap;
+        flex-wrap: wrap;
+        gap: 10px;
+        text-align: justify;
         margin-bottom: 20px;
       }
       .contact-info p {
-        margin: 5px 0;
+        margin: 0;
+        padding: 0;
       }
       .section {
         margin-bottom: 20px;
       }
-      .section h2 {
+      .section h3 {
         border-bottom: 2px solid #333;
         padding-bottom: 5px;
         margin-bottom: 10px;
@@ -76,25 +87,25 @@
   </head>
   <body>
     <div class="resume">
-      <h1>João Pedro de Figueiredo</h1>
+      <h1 class="resume-name">João Pedro de Figueiredo</h1>
       <div class="contact-info">
-        <p>São Paulo, Brazil</p>
-        <p>defigueiredojoaopedro@gmail.com</p>
-        <p>+55 11 99004 0694</p>
+        <p>📍 São Paulo, Brazil</p>
+        <p>📧 defigueiredojoaopedro@gmail.com</p>
+        <p>📱 +55 11 99004 0694</p>
         <p>
           <a href="http://www.figueiredojoaopedro02.com"
-            >www.figueiredojoaopedro02.com</a
+            >🌐 www.figueiredojoaopedro02.com</a
           >
         </p>
         <p>
           <a href="https://github.com/figueiredojoaopedro"
-            >github.com/figueiredojoaopedro</a
+            >💻 github.com/figueiredojoaopedro</a
           >
         </p>
       </div>
 
       <div class="section">
-        <h2>Summary</h2>
+        <h3>Summary</h2>
         <p>
           Full-stack engineer with 4+ years of experience building high
           performance scalable web applications. Proven track record
@@ -103,8 +114,8 @@
       </div>
 
       <div class="section">
-        <h2>Experience</h2>
-        <h3>Software Engineer</h3>
+        <h3>Experience</h2>
+        <h4>Software Engineer</h3>
         <p>
           <strong>Automatic Data Processing - ADP</strong> | São Paulo, Brazil |
           June 2022 – Present
@@ -191,8 +202,8 @@
       </div>
 
       <div class="section">
-        <h2>Projects</h2>
-        <h3>Easy Video Editor (easy-video-editor)</h3>
+        <h3>Projects</h2>
+        <h4>Easy Video Editor (easy-video-editor)</h3>
         <ul>
           <li>
             Developed simple video editor ran by command line interface to:
@@ -207,7 +218,7 @@
           <li><strong>Tools Used:</strong> Node.js, ffmpeg, fluent-ffmpeg</li>
         </ul>
 
-        <h3>TTS-GEN</h3>
+        <h4>TTS-GEN</h3>
         <ul>
           <li>
             Simple text-to-speach app to generate audios in any language using
@@ -219,7 +230,7 @@
           </li>
         </ul>
 
-        <h3>casarnos.com.br</h3>
+        <h4>casarnos.com.br</h3>
         <ul>
           <li>
             It is still being developed as a SaaS. It helps couples to create
@@ -234,7 +245,7 @@
       </div>
 
       <div class="section">
-        <h2>Technologies</h2>
+        <h3>Technologies</h2>
         <p><strong>Languages:</strong> C#, SQL, JavaScript, NodeJS, Python</p>
         <p>
           <strong>Technologies:</strong> Next.js, React, Node.js, Microsoft SQL
@@ -245,7 +256,7 @@
       </div>
 
       <div class="section">
-        <h2>Education</h2>
+        <h4>Education</h2>
         <p><strong>Universidade Anhembi Morumbi</strong></p>
         <p>BS in Computer Science | Jul 2021 – Jun 2025</p>
         <ul>
@@ -256,9 +267,5 @@
         </ul>
       </div>
     </div>
-
-    <button class="print-button" onclick="window.print()">
-      Print / Download
-    </button>
   </body>
 </html>
