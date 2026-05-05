@@ -95,3 +95,21 @@ Universidade Anhembi Morumbi
 BS in Computer Science
 Jul 2021 – Jun 2025
 ◦ Coursework: Compilers, Calculus, Physics, Analytical Geometry, Graphs, OOP, Algorithms, Data Structures and Algorithms
+FIAP
+Postgraduation
+Jul 2025 - May 2026
+◦ Fullstack development - Activities and societies: Domain Driven Design
+Low Code Development
+Typescript
+Node JS
+Databases - Postgres, Mongodb, Redis
+Software Quality - QA and tests
+UI/UX
+React
+NextJS
+Microfrontend
+React Native
+DevOps
+Clean Architecture
+Microservices
+Cloud Architecture
