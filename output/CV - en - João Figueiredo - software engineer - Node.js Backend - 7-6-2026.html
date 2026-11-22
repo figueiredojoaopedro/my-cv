@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - João Figueiredo - Software Engineer</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+      font-size: 10pt;
+      line-height: 1.45;
+      color: #1a1a1a;
+      background: #e8e8e8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 12px;
+    }
+    .page {
+      width: 21cm;
+      min-height: 29.7cm;
+      background: #fff;
+      padding: 1cm 1.2cm;
+      box-shadow: 0 4px 20px rgba(0,0,0,.12);
+      margin-bottom: 24px;
+      position: relative;
+    }
+    header { text-align: center; margin-bottom: 12px; }
+    header h1 {
+      font-size: 20pt;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #111;
+    }
+    header h1 small { font-weight: 400; color: #555; font-size: 12pt; }
+    .contact-bar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px 18px;
+      margin-top: 6px;
+      font-size: 9pt;
+      color: #333;
+    }
+    .contact-bar a { color: #2563eb; text-decoration: none; }
+    .contact-bar a:hover { text-decoration: underline; }
+    .contact-bar span { white-space: nowrap; }
+    .section { margin-bottom: 10px; }
+    .section-heading {
+      font-size: 10.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #111;
+      border-bottom: 1.5px solid #111;
+      padding-bottom: 2px;
+      margin-bottom: 6px;
+    }
+    .summary-text { text-align: justify; }
+    .entry { margin-bottom: 8px; }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px 12px;
+    }
+    .entry-title {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #111;
+    }
+    .entry-subtitle {
+      font-size: 10pt;
+      color: #444;
+    }
+    .entry-date {
+      font-size: 9pt;
+      color: #666;
+      white-space: nowrap;
+    }
+    .entry-body { margin-top: 2px; }
+    .entry-body ul { padding-left: 16px; margin-bottom: 2px; }
+    .entry-body ul li { margin-bottom: 2px; text-align: justify; }
+    .entry-body ul ul { margin-top: 2px; margin-bottom: 2px; list-style-type: circle; }
+    .entry-tools { font-size: 9pt; color: #555; margin-top: 2px; }
+    .tech-line { margin-bottom: 3px; }
+    .tech-line strong { font-weight: 600; }
+    .edu-block { margin-bottom: 6px; }
+    .edu-block .entry-header { margin-bottom: 2px; }
+    .edu-details { font-size: 9pt; color: #444; padding-left: 0; list-style: none; }
+    .edu-details li { margin-bottom: 1px; }
+    @media print {
+      body { background: none; padding: 0; }
+      .page { box-shadow: none; margin: 0; padding: 1cm 1.2cm; width: 100%; min-height: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>João Figueiredo</h1>
+      <div class="contact-bar">
+        <span>São Paulo, Brazil</span>
+        <span><a href="mailto:defigueiredojoaopedro@gmail.com">defigueiredojoaopedro@gmail.com</a></span>
+        <span>+55 11 99004 0694</span>
+        <span><a href="https://www.figueiredojoaopedro02.com">figueiredojoaopedro02.com</a></span>
+        <span><a href="https://github.com/figueiredojoaopedro">github.com/figueiredojoaopedro</a></span>
+      </div>
+    </header>
+
+    <div class="section">
+      <div class="section-heading">Summary</div>
+      <p class="summary-text">Backend software engineer with 4+ years of experience building scalable APIs and distributed systems with Node.js and TypeScript. Specialist in AWS serverless architecture, messaging systems, and automated testing. Proven track record leading technical initiatives and driving engineering excellence at an S&P 500 company. Passionate about code quality, technical mentorship, and AI-driven development.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">Experience</div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Software Engineer</span>
+          <span class="entry-date">June 2022 – Present</span>
+        </div>
+        <div class="entry-subtitle">Automatic Data Processing – ADP · São Paulo, Brazil</div>
+        <div class="entry-body">
+          <ul>
+            <li>Designed and implemented back-end solutions with Node.js and TypeScript, building RESTful APIs and automating jobs for multiple internal teams and projects.
+              <ul>
+                <li>Cron jobs to create tickets after chatbot overflow, reducing response time and increasing customer satisfaction by 60%.</li>
+                <li>API endpoints to serve Business Intelligence team data needs.</li>
+                <li>Ticket screening automation using business rules based on seniority and expertise. Eliminated 100% of manual ticket triage.</li>
+              </ul>
+            </li>
+            <li>Developed and deployed serverless applications on AWS using Lambda, API Gateway, and DynamoDB, ensuring high availability and scalability.</li>
+            <li>Implemented AWS CDK for infrastructure as code, reducing deployment issues by 97%.</li>
+            <li>Built messaging and queue systems for chatbot notifications, processing approximately 20,000 views per campaign asynchronously.</li>
+            <li>Created test suite and answer key to validate AI solution responses, decreasing production bugs by 95%.</li>
+            <li>Owned the full development lifecycle: requirements gathering with stakeholders, architecture design, development, testing, deployment, and maintenance.</li>
+            <li>Collaborated with global teams on international projects, sharing knowledge and best practices across the organization.</li>
+            <li>Championed best practices including TDD, CI/CD, and Clean Architecture, contributing to continuous team improvement.</li>
+            <li>Integrated generative AI into the development workflow for code automation and process optimization.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">Projects</div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">casarnos.com.br</span>
+          <span class="entry-date"><a href="https://casarnos.com.br">casarnos.com.br</a></span>
+        </div>
+        <div class="entry-body">
+          <ul>
+            <li>SaaS under development with microservices architecture, relational database, and containerized deployments. Features authentication, processing queues, and RESTful API.</li>
+          </ul>
+          <div class="entry-tools"><strong>Tools:</strong> Node.js, Next.js, TypeScript, Postgres, AWS RDS, Docker, Tailwind CSS</div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Easy Video Editor</span>
+          <span class="entry-date"><a href="https://github.com/figueiredojoaopedro/easy-video-editor">easy-video-editor</a></span>
+        </div>
+        <div class="entry-body">
+          <ul>
+            <li>CLI tool for video processing with Node.js and FFmpeg, focused on performance and integration testing.</li>
+          </ul>
+          <div class="entry-tools"><strong>Tools:</strong> Node.js, TypeScript, ffmpeg, fluent-ffmpeg</div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">everlasting-mementos</span>
+        </div>
+        <div class="entry-body">
+          <ul>
+            <li>Platform with clean architecture, AI integration (RAG and Agents), and NoSQL storage.</li>
+          </ul>
+          <div class="entry-tools"><strong>Tools:</strong> Next.js, TypeScript, Docker, Firebase, NoSQL, AI, RAG, Agents, Clean Architecture</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">Technologies</div>
+      <div class="tech-line"><strong>Languages:</strong> TypeScript, JavaScript, Node.js, Python, C#, SQL</div>
+      <div class="tech-line"><strong>Back-end Frameworks:</strong> NestJS, Express, Next.js</div>
+      <div class="tech-line"><strong>Cloud & Serverless:</strong> AWS (Lambda, API Gateway, S3, DynamoDB, CloudWatch, EventBridge, EC2, CDK), Docker</div>
+      <div class="tech-line"><strong>Databases:</strong> Postgres, Microsoft SQL Server, DynamoDB, MongoDB, Redis</div>
+      <div class="tech-line"><strong>Testing & Quality:</strong> TDD, Unit Testing, Integration Testing, CI/CD</div>
+      <div class="tech-line"><strong>Architecture & Practices:</strong> Microservices, Clean Architecture, Message Queues, DDD, SOLID, Agile, SCRUM, Spec-Driven Development</div>
+      <div class="tech-line"><strong>Security:</strong> Authentication & Authorization (OAuth2, JWT)</div>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">Education</div>
+      <div class="edu-block">
+        <div class="entry-header">
+          <span class="entry-title">FIAP</span>
+          <span class="entry-date">Jul 2025 – May 2026</span>
+        </div>
+        <div class="entry-subtitle">Postgraduate in Fullstack Development</div>
+        <ul class="edu-details">
+          <li>Domain Driven Design, Microservices, Clean Architecture, TypeScript, Node.js, Software Quality, DevOps, Cloud Architecture</li>
+        </ul>
+      </div>
+      <div class="edu-block">
+        <div class="entry-header">
+          <span class="entry-title">Universidade Anhembi Morumbi</span>
+          <span class="entry-date">Jul 2021 – Jun 2025</span>
+        </div>
+        <div class="entry-subtitle">BS in Computer Science</div>
+        <ul class="edu-details">
+          <li>Coursework: Compilers, Calculus, Physics, Analytical Geometry, Graphs, OOP, Algorithms, Data Structures</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

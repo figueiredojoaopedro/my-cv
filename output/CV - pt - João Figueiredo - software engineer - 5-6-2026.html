@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - João Figueiredo - Engenheiro de Software</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+      font-size: 10pt;
+      line-height: 1.45;
+      color: #1a1a1a;
+      background: #e8e8e8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 12px;
+    }
+    .page {
+      width: 21cm;
+      min-height: 29.7cm;
+      background: #fff;
+      padding: 1cm 1.2cm;
+      box-shadow: 0 4px 20px rgba(0,0,0,.12);
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    header { text-align: center; margin-bottom: 12px; }
+    header h1 {
+      font-size: 20pt;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #111;
+    }
+    header h1 small { font-weight: 400; color: #555; font-size: 12pt; }
+    .contact-bar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px 18px;
+      margin-top: 6px;
+      font-size: 9pt;
+      color: #333;
+    }
+    .contact-bar a { color: #2563eb; text-decoration: none; }
+    .contact-bar a:hover { text-decoration: underline; }
+    .contact-bar span { white-space: nowrap; }
+
+    .section { margin-bottom: 10px; }
+    .section-heading {
+      font-size: 10.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #111;
+      border-bottom: 1.5px solid #111;
+      padding-bottom: 2px;
+      margin-bottom: 6px;
+    }
+
+    .summary-text { text-align: justify; }
+
+    .entry { margin-bottom: 8px; }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px 12px;
+    }
+    .entry-title {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #111;
+    }
+    .entry-subtitle {
+      font-size: 10pt;
+      color: #444;
+    }
+    .entry-date {
+      font-size: 9pt;
+      color: #666;
+      white-space: nowrap;
+    }
+    .entry-body { margin-top: 2px; }
+    .entry-body ul { padding-left: 16px; margin-bottom: 2px; }
+    .entry-body ul li { margin-bottom: 2px; text-align: justify; }
+    .entry-body ul ul { margin-top: 2px; margin-bottom: 2px; list-style-type: circle; }
+    .entry-tools { font-size: 9pt; color: #555; margin-top: 2px; }
+
+    .tech-line { margin-bottom: 3px; }
+    .tech-line strong { font-weight: 600; }
+
+    .edu-block { margin-bottom: 6px; }
+    .edu-block .entry-header { margin-bottom: 2px; }
+    .edu-details { font-size: 9pt; color: #444; padding-left: 0; list-style: none; }
+    .edu-details li { margin-bottom: 1px; }
+
+    @media print {
+      body { background: none; padding: 0; }
+      .page { box-shadow: none; margin: 0; padding: 1cm 1.2cm; width: 100%; min-height: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>João Figueiredo</h1>
+      <div class="contact-bar">
+        <span>São Paulo, Brasil</span>
+        <span><a href="mailto:defigueiredojoaopedro@gmail.com">defigueiredojoaopedro@gmail.com</a></span>
+        <span>+55 11 99004 0694</span>
+        <span><a href="https://www.figueiredojoaopedro02.com">figueiredojoaopedro02.com</a></span>
+        <span><a href="https://github.com/figueiredojoaopedro">github.com/figueiredojoaopedro</a></span>
+      </div>
+    </header>
+
+    <div class="section">
+      <div class="section-heading">Resumo</div>
+      <p class="summary-text">Engenheiro full-stack com 4+ anos de experiência em arquitetura AWS (Lambda, S3, EC2, RDS, CloudWatch) e desenvolvimento de sistemas escaláveis. Expertise em Python, .NET/C#, testes automatizados, pipelines de dados e práticas DevOps. Histórico comprovado de entrega de valor em empresa S&P 500 com foco em qualidade de código e monitoramento de aplicações.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">Experiência</div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Engenheiro de Software</span>
+          <span class="entry-date">Junho 2022 – Presente</span>
+        </div>
+        <div class="entry-subtitle">Automatic Data Processing – ADP · São Paulo, Brasil</div>
+        <div class="entry-body">
+          <ul>
+            <li>Desenvolveu e implantou aplicações serverless na AWS (Lambda, API Gateway, DynamoDB, S3), garantindo alta disponibilidade e baixa latência para sistemas críticos.</li>
+            <li>Implementou pipelines de dados automatizados com AWS Lambda e EventBridge, processando notificações e tickets em tempo real — cada notificação ao vivo alcançou ~20.000 visualizações.</li>
+            <li>Criou jobs Cron e endpoints de API para automação de fluxos de trabalho, integrando equipes internas de Business Intelligence e suporte.</li>
+            <li>Monitorou aplicações em produção utilizando AWS CloudWatch e IBM logs, assegurando observabilidade e resposta rápida a incidentes.</li>
+            <li>Implementou projetos utilizando AWS CDK para infraestrutura como código, reduzindo problemas de deploy em 97%.</li>
+            <li>Desenvolveu testes automatizados e gabaritos de validação para soluções de IA, reduzindo bugs em produção em 95%.</li>
+            <li>Trabalhou com equipes globais em projetos internacionais, aplicando metodologias ágeis (SCRUM) e boas práticas de engenharia.</li>
+            <li>Construiu plataformas front-end com React.js, entregando interfaces intuitivas para visualização e curadoria de dados.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">Projetos</div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">everlasting-mementos</span>
+        </div>
+        <div class="entry-body">
+          <ul>
+            <li>Arquitetura serverless com Firebase e Next.js deployado em produção na Vercel, utilizando Docker e integração com serviços de IA, RAG e Agents.</li>
+          </ul>
+          <div class="entry-tools"><strong>Ferramentas:</strong> Next.js, Vercel, Docker, Firebase, NoSQL, IA, RAG, Agents, Tailwind CSS, Data Streaming</div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">casarnos.com.br</span>
+          <span class="entry-date"><a href="https://casarnos.com.br">casarnos.com.br</a></span>
+        </div>
+        <div class="entry-body">
+          <ul>
+            <li>SaaS em desenvolvimento com arquitetura moderna em cloud (AWS RDS, Vercel, Docker), banco de dados relacional Postgres e boas práticas de DevOps.</li>
+          </ul>
+          <div class="entry-tools"><strong>Ferramentas:</strong> Node.js, Next.js, Postgres, AWS RDS, Vercel, Docker, SQL, Tailwind CSS, Framer Motion</div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Easy Video Editor</span>
+          <span class="entry-date"><a href="https://github.com/figueiredojoaopedro/easy-video-editor">easy-video-editor</a></span>
+        </div>
+        <div class="entry-body">
+          <ul>
+            <li>Ferramenta CLI para processamento de vídeos com Node.js e FFmpeg, demonstrando capacidade de automação de pipelines de dados multimídia.</li>
+          </ul>
+          <div class="entry-tools"><strong>Ferramentas:</strong> Node.js, Python, ffmpeg, fluent-ffmpeg</div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">TTS-GEN</span>
+        </div>
+        <div class="entry-body">
+          <ul>
+            <li>Aplicativo de texto-para-fala com FastAPI (Python) e Docker, integrando modelo de IA Coqui TTS para geração de áudio multilíngue.</li>
+          </ul>
+          <div class="entry-tools"><strong>Ferramentas:</strong> Python, FastAPI, Docker, Node.js, Coqui TTS, Gen AI</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">Tecnologias</div>
+      <div class="tech-line"><strong>Cloud &amp; DevOps:</strong> AWS (Lambda, S3, EC2, RDS, DynamoDB, API Gateway, CloudWatch, EventBridge, Step Functions, CDK), Docker, CI/CD, DevOps</div>
+      <div class="tech-line"><strong>Back-end:</strong> Python, .NET/C#, Node.js, NestJS, APIs REST, SQL, Postgres, Microsoft SQL Server, MongoDB, Redis</div>
+      <div class="tech-line"><strong>Front-end:</strong> Angular, React, Next.js, TypeScript, JavaScript, UI/UX</div>
+      <div class="tech-line"><strong>Qualidade &amp; Monitoramento:</strong> Testes Automatizados, TDD, CloudWatch, DataDog</div>
+      <div class="tech-line"><strong>Boas Práticas:</strong> DDD, TDD, CI/CD, SOLID, Agile, SCRUM, Clean Architecture</div>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">Educação</div>
+      <div class="edu-block">
+        <div class="entry-header">
+          <span class="entry-title">FIAP</span>
+          <span class="entry-date">Jul 2025 – Mai 2026</span>
+        </div>
+        <div class="entry-subtitle">Pós-graduação em Desenvolvimento Fullstack</div>
+        <ul class="edu-details">
+          <li>Domain Driven Design, TypeScript, Node.js, Bancos de Dados, Qualidade & Testes, UI/UX, React, Next.js, Microfrontend, React Native, DevOps, Clean Architecture, Microsserviços, Cloud Architecture</li>
+        </ul>
+      </div>
+      <div class="edu-block">
+        <div class="entry-header">
+          <span class="entry-title">Universidade Anhembi Morumbi</span>
+          <span class="entry-date">Jul 2021 – Jun 2025</span>
+        </div>
+        <div class="entry-subtitle">Bacharelado em Ciência da Computação</div>
+        <ul class="edu-details">
+          <li>Compiladores, Cálculo, Física, Geometria Analítica, Grafos, POO, Algoritmos, Estruturas de Dados</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

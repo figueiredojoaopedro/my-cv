@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - João Figueiredo - Engenheiro de Software</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+      font-size: 10pt;
+      line-height: 1.45;
+      color: #1a1a1a;
+      background: #e8e8e8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 12px;
+    }
+    .page {
+      width: 21cm;
+      min-height: 29.7cm;
+      background: #fff;
+      padding: 1cm 1.2cm;
+      box-shadow: 0 4px 20px rgba(0,0,0,.12);
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    /* Header */
+    header { text-align: center;       margin-bottom: 12px; }
+    header h1 {
+      font-size: 20pt;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #111;
+    }
+    header h1 small { font-weight: 400; color: #555; font-size: 12pt; }
+    .contact-bar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px 18px;
+      margin-top: 6px;
+      font-size: 9pt;
+      color: #333;
+    }
+    .contact-bar a { color: #2563eb; text-decoration: none; }
+    .contact-bar a:hover { text-decoration: underline; }
+    .contact-bar span { white-space: nowrap; }
+
+    /* Sections */
+    .section { margin-bottom: 10px; }
+    .section-heading {
+      font-size: 10.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #111;
+      border-bottom: 1.5px solid #111;
+      padding-bottom: 2px;
+      margin-bottom: 6px;
+    }
+
+    /* Summary */
+    .summary-text { text-align: justify; }
+
+    /* Experience & Projects */
+    .entry { margin-bottom: 8px; }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px 12px;
+    }
+    .entry-title {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #111;
+    }
+    .entry-subtitle {
+      font-size: 10pt;
+      color: #444;
+    }
+    .entry-date {
+      font-size: 9pt;
+      color: #666;
+      white-space: nowrap;
+    }
+    .entry-body { margin-top: 2px; }
+    .entry-body ul { padding-left: 16px; margin-bottom: 2px; }
+    .entry-body ul li { margin-bottom: 2px; text-align: justify; }
+    .entry-body ul ul { margin-top: 2px; margin-bottom: 2px; list-style-type: circle; }
+    .entry-tools { font-size: 9pt; color: #555; margin-top: 2px; }
+
+    /* Technologies */
+    .tech-line { margin-bottom: 3px; }
+    .tech-line strong { font-weight: 600; }
+
+    /* Education */
+    .edu-block { margin-bottom: 6px; }
+    .edu-block .entry-header { margin-bottom: 2px; }
+    .edu-details { font-size: 9pt; color: #444; padding-left: 0; list-style: none; }
+    .edu-details li { margin-bottom: 1px; }
+
+    @media print {
+      body { background: none; padding: 0; }
+      .page {       box-shadow: none; margin: 0; padding: 1cm 1.2cm; width: 100%; min-height: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>João Figueiredo</h1>
+      <div class="contact-bar">
+        <span>São Paulo, Brasil</span>
+        <span><a href="mailto:defigueiredojoaopedro@gmail.com">defigueiredojoaopedro@gmail.com</a></span>
+        <span>+55 11 99004 0694</span>
+        <span><a href="https://www.figueiredojoaopedro02.com">figueiredojoaopedro02.com</a></span>
+        <span><a href="https://github.com/figueiredojoaopedro">github.com/figueiredojoaopedro</a></span>
+      </div>
+    </header>
+
+    <div class="section">
+      <div class="section-heading">Resumo</div>
+      <p class="summary-text">Engenheiro full-stack com mais de 4 anos de experiência na construção de aplicações web escaláveis e de alta performance. Histórico comprovado contribuindo para a excelência em engenharia em uma empresa S&P 500.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">Experiência</div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Engenheiro de Software</span>
+          <span class="entry-date">Junho 2026 – Presente</span>
+        </div>
+        <div class="entry-subtitle">XP Inc. · São Paulo, Brasil</div>
+        <div class="entry-body">
+          <ul>
+            <li>Desenvolve e mantém microsserviços escaláveis e de alta performance que suportam os produtos de crédito e empréstimos da XP para pessoas físicas e jurídicas.</li>
+            <li>Atua em empréstimos com garantia, sem garantia e consignado, contribuindo para a confiabilidade, disponibilidade e continuidade dos serviços em produção.</li>
+            <li>Investiga e resolve incidentes em produção, realizando análise de causa raiz, troubleshooting de serviços distribuídos e implantando correções durante cenários operacionais críticos.</li>
+            <li>Desenvolve mecanismos de resiliência e tolerância a falhas para aplicações de empréstimo, implementando retries assíncronos, estratégias de fallback e circuit breakers para melhorar a confiabilidade sob falhas parciais.</li>
+            <li>Contribui para a observabilidade de produção por meio do ProductSetup, aplicação interna usada para apoiar o monitoramento e a análise operacional de ambientes de produção.</li>
+            <li>Colabora com equipes de engenharia e produto em ambiente Agile/Scrum, aplicando princípios de Clean Architecture e Domain-Driven Design (DDD).</li>
+          </ul>
+          <div class="entry-tools"><strong>Tecnologias:</strong> C#, .NET, Node.js, React, Azure, Kafka, Kubernetes, Docker, SQL Server, PostgreSQL, MongoDB, Redis, RabbitMQ, CI/CD, Grafana, Dynatrace</div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Engenheiro de Software</span>
+          <span class="entry-date">Junho 2022 – Junho 2026</span>
+        </div>
+        <div class="entry-subtitle">Automatic Data Processing – ADP · São Paulo, Brasil</div>
+        <div class="entry-body">
+          <ul>
+            <li>Projetou e implementou soluções de back-end usando Node.js, criando APIs e automatizando tarefas para múltiplas equipes e projetos internos.</li>
+            <li>Jobs Cron para criar tickets após o transbordamento do chatbot, aumentando a satisfação do cliente em 60%.</li>
+            <li>Automação de triagem de tickets para priorizar tickets de suporte de acordo com senioridade, tempo de casa e especialização. Eliminou 100% do trabalho manual de triagem.</li>
+            <li>Construiu plataformas front-end dinâmicas com React.js, oferecendo interfaces de usuário intuitivas para o site de curadoria de dados.</li>
+            <li>Aplicativo web com tabelas e filtros para visualização dos dados das soluções de IA, melhorando a satisfação da equipe de curadoria em 60%.</li>
+            <li>Aplicativo web para gerentes controlarem quantos tickets os analistas devem responder no dia, aumentando a visão sobre o trabalho dos analistas em 100%.</li>
+            <li>Teste e gabarito para analisar se as soluções de IA respondem corretamente às perguntas cadastradas, reduzindo bugs em produção em 95%.</li>
+            <li>Desenvolveu um sistema de notificação para o chatbot do Brasil, garantindo atualizações oportunas e gerenciamento de tarefas do lado do cliente. Cada notificação ao vivo alcançou aproximadamente 20.000 visualizações.</li>
+            <li>Implementou projetos usando AWS CDK para melhorar a implantação de aplicações, reduzindo problemas de deploy em 97%.</li>
+            <li>Utilizou IBM Watson para construir soluções de chatbot para a ADP Brasil e Chile, com adoção superior a 45% e 97% de satisfação do cliente.</li>
+            <li>Manteve solução de IA para ler e responder tickets automaticamente com IBM Watson — treinou o modelo IBM Watson para 23% de Resolução na Primeira Chamada.</li>
+            <li>Trabalhou em projetos internacionais, colaborando com equipes globais para entregar soluções de software personalizadas.</li>
+            <li>Migrou 100% de uma base de conhecimento hospedada em solução terceirizada para o EKM — solução local de IA para gerenciamento de conhecimento.</li>
+            <li>Implementou um sistema de priorização de tickets solicitados via chatbot, resultando em 60% menos solicitações de atendimento ao cliente.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">Projetos</div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Easy Video Editor</span>
+          <span class="entry-date"><a href="https://github.com/figueiredojoaopedro/easy-video-editor">easy-video-editor</a></span>
+        </div>
+        <div class="entry-body">
+          <ul>
+            <li>Editor de vídeo simples executado por linha de comando para unir múltiplos vídeos MP4, cortar vídeos em timestamps específicos e processar vídeos eficientemente usando FFmpeg.</li>
+          </ul>
+          <div class="entry-tools"><strong>Ferramentas:</strong> Node.js, ffmpeg, fluent-ffmpeg</div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">TTS-GEN</span>
+        </div>
+        <div class="entry-body">
+          <ul>
+            <li>Aplicativo simples de texto-para-fala para gerar áudios em qualquer idioma usando o modelo Coqui TTS.</li>
+          </ul>
+          <div class="entry-tools"><strong>Ferramentas:</strong> Coqui TTS, Node.js, FastAPI, Python, Docker, Gen AI</div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">casarnos.com.br</span>
+          <span class="entry-date"><a href="https://casarnos.com.br">casarnos.com.br</a></span>
+        </div>
+        <div class="entry-body">
+          <ul>
+            <li>SaaS em desenvolvimento. Ajuda casais a criar listas de presentes de casamento e confirmação de presença, além de convites online para a cerimônia.</li>
+          </ul>
+          <div class="entry-tools"><strong>Ferramentas:</strong> Node.js, Next.js, Postgres, Resend, AWS RDS, Vercel, Docker, SQL, Tailwind CSS, Framer Motion</div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">everlasting-mementos</span>
+        </div>
+        <div class="entry-body">
+          <div class="entry-tools"><strong>Ferramentas:</strong> Next.js, Vercel, Docker, Firebase, NoSQL, IA, RAG, Agents, Product Design, Tailwind CSS, Data Streaming, Deploy para Produção</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">Tecnologias</div>
+      <div class="tech-line"><strong>Linguagens:</strong> C#, SQL, JavaScript, TypeScript, Node.js, Python</div>
+      <div class="tech-line"><strong>Tecnologias:</strong> Next.js, React, Node.js, .NET, Microsoft SQL Server, Postgres, DynamoDB, Redis, AWS Lambda, S3, AWS CDK, IBM Watson, AWS API Gateway, AWS CodeBuild, Git, MongoDB, Docker, Cloudant, AWS CloudWatch, AWS EventBridge, AWS EC2, Azure, Kubernetes, Kafka, RabbitMQ, Grafana, Dynatrace, UI/UX, React Native, DevOps, Clean Architecture, NestJS, IA, GenAI, RAG, Agents</div>
+      <div class="tech-line"><strong>Boas Práticas:</strong> DDD, TDD, CI/CD, SOLID, Agile, SCRUM</div>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">Educação</div>
+      <div class="edu-block">
+        <div class="entry-header">
+          <span class="entry-title">FIAP</span>
+          <span class="entry-date">Jul 2025 – Mai 2026</span>
+        </div>
+        <div class="entry-subtitle">Pós-graduação em Desenvolvimento Fullstack</div>
+        <ul class="edu-details">
+          <li>Domain Driven Design, Low Code, TypeScript, Node.js, Bancos de Dados (Postgres, MongoDB, Redis), Qualidade de Software & Testes, UI/UX, React, Next.js, Microfrontend, React Native, DevOps, Clean Architecture, Microsserviços, Cloud Architecture</li>
+        </ul>
+      </div>
+      <div class="edu-block">
+        <div class="entry-header">
+          <span class="entry-title">Universidade Anhembi Morumbi</span>
+          <span class="entry-date">Jul 2021 – Jun 2025</span>
+        </div>
+        <div class="entry-subtitle">Bacharelado em Ciência da Computação</div>
+        <ul class="edu-details">
+          <li>Disciplinas: Compiladores, Cálculo, Física, Geometria Analítica, Grafos, POO, Algoritmos, Estruturas de Dados e Algoritmos</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

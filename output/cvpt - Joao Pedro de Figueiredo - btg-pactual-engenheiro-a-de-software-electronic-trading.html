@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - João Pedro de Figueiredo - BTG Pactual</title>
+    <style>
+      .resume-name {
+        font-size: large;
+        font-weight: 500;
+      }
+
+      body {
+        font-family: sans-serif;
+        background: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .resume {
+        background: white;
+        width: 21cm;
+        min-height: 29.7cm;
+        padding: 2cm;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1,
+      h2,
+      h3 {
+        margin-top: 0;
+      }
+      h1 {
+        text-align: center;
+      }
+      .contact-info {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        white-space: nowrap;
+        flex-wrap: wrap;
+        gap: 10px;
+        text-align: justify;
+        margin-bottom: 20px;
+      }
+      .contact-info p {
+        margin: 0;
+        padding: 0;
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+      .section h3 {
+        border-bottom: 2px solid #333;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      .print-button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      @media print {
+        body {
+          background: none;
+          padding: 0;
+        }
+        .print-button {
+          display: none;
+        }
+        .resume {
+          box-shadow: none;
+          margin: 0;
+          width: auto;
+          min-height: auto;
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="resume">
+      <h1 class="resume-name">João Pedro de Figueiredo</h1>
+      <div class="contact-info">
+        <p>📍São Paulo, Brasil</p>
+        <p>📧 defigueiredojoaopedro@gmail.com</p>
+        <p>📱 +55 11 99004 0694</p>
+        <p>
+          <a href="http://www.figueiredojoaopedro02.com"
+            >🌐 www.figueiredojoaopedro02.com</a
+          >
+        </p>
+        <p>
+          <a href="https://github.com/figueiredojoaopedro"
+            >💻 github.com/figueiredojoaopedro</a
+          >
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>Resumo</h3>
+        <p>
+          Engenheiro de Software com mais de 4 anos de experiência na construção de sistemas de alto desempenho e escaláveis. Especialista em automação de processos críticos e desenvolvimento de APIs robustas em ambientes de alta exigência (S&P 500). Experiência sólida em Cloud (AWS), Node.js e C#, focado em entregar soluções que agregam valor direto ao negócio e otimizam a eficiência operacional através de tecnologias modernas e escaláveis.
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>Experiência</h3>
+        <h4>Engenheiro de Software</h4>
+        <p>
+          <strong>Automatic Data Processing - ADP</strong> | São Paulo, Brasil |
+          Junho 2022 – Presente
+        </p>
+        <ul>
+          <li>
+            Projetou e implementou soluções de back-end escaláveis usando <strong>Node.js</strong> e <strong>C#</strong>, criando APIs de alta performance e automatizando processos para diversas equipes globais.
+          </li>
+          <ul>
+            <li>
+              <strong>Automação de Missão Crítica:</strong> Implementou automação de triagem de tickets que prioriza atendimentos por senioridade e especialização, eliminando 100% do trabalho manual e otimizando o fluxo operacional.
+            </li>
+            <li>
+              Jobs Cron para criação automatizada de tickets, resultando em um aumento de 60% na satisfação do cliente.
+            </li>
+            <li>
+              Desenvolvimento de endpoints de API robustos para suporte às necessidades analíticas da equipe de Business Intelligence.
+            </li>
+          </ul>
+          <li>
+            Desenvolveu plataformas front-end dinâmicas com <strong>React.js</strong>, focadas em visualização de dados complexos e curadoria de informações de IA.
+          </li>
+          <ul>
+            <li>
+              Dashboard para controle operacional de gerentes, aumentando a visibilidade sobre a produtividade da equipe em 100%.
+            </li>
+            <li>
+              Sistema de validação e testes para soluções de IA, reduzindo bugs em ambiente de produção em 95%.
+            </li>
+          </ul>
+          <li>
+            <strong>Arquitetura Cloud e Serverless:</strong> Implantou aplicações serverless na <strong>AWS</strong> (Lambda, API Gateway, DynamoDB) garantindo alta disponibilidade e resiliência.
+          </li>
+          <li>
+            Implementou infraestrutura como código (IaC) via <strong>AWS CDK</strong>, reduzindo incidentes de deploy em 97%.
+          </li>
+          <li>
+            Desenvolveu sistemas de notificação em tempo real para chatbots, gerenciando alto volume de tráfego (aprox. 20.000 visualizações por evento).
+          </li>
+          <li>
+            Colaboração ativa em projetos internacionais, integrando soluções personalizadas para mercados do Brasil e Chile, com foco em eficiência e experiência do usuário (97% de satisfação).
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Projetos</h3>
+        <h4>Easy Video Editor</h4>
+        <ul>
+          <li>
+            Ferramenta de CLI para processamento eficiente de vídeos MP4 (corte, junção e manipulação) utilizando FFmpeg e Node.js.
+          </li>
+        </ul>
+
+        <h4>TTS-GEN</h4>
+        <ul>
+          <li>
+            Aplicação de processamento de linguagem natural para geração de áudio multi-idioma.
+            <strong>Stack:</strong> Python, FastAPI, Docker, Node.js.
+          </li>
+        </ul>
+
+        <h4>casarnos.com.br (SaaS)</h4>
+        <ul>
+          <li>
+            Plataforma SaaS para gestão de eventos e convites online.
+            <strong>Stack:</strong> Next.js, Postgres, AWS RDS, Docker, Tailwind CSS.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Tecnologias</h3>
+        <p>
+          <strong>Linguagens:</strong> C#, TypeScript, JavaScript (Node.js), SQL, Python
+        </p>
+        <p>
+          <strong>Cloud & DevOps:</strong> AWS (Lambda, API Gateway, DynamoDB, S3, CDK, EC2, CloudWatch, Event Bridge), Docker, CI/CD, Git
+        </p>
+        <p>
+          <strong>Frameworks & Bancos:</strong> React, Next.js, NestJS, Microsoft SQL Server, Postgres, Redis, MongoDB, Cloudant
+        </p>
+        <p>
+          <strong>Especialidades:</strong> APIs REST, WebSockets, Arquitetura Serverless, Clean Architecture, SOLID, TDD, DDD, Metodologias Ágeis (Scrum)
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>Educação</h3>
+        <p><strong>FIAP</strong></p>
+        <p>Pós-graduação em Desenvolvimento Fullstack | Jul 2025 - Mai 2026</p>
+        <ul>
+          <li>Foco em Cloud Architecture, Microservices, Clean Architecture e DevOps.</li>
+        </ul>
+
+        <p><strong>Universidade Anhembi Morumbi</strong></p>
+        <p>Bacharelado em Ciência da Computação | Jul 2021 – Jun 2025</p>
+        <ul>
+          <li>
+            Destaque em Algoritmos, Estruturas de Dados e Compiladores.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button class="print-button" onclick="window.print()">Imprimir CV</button>
+  </body>
+</html>

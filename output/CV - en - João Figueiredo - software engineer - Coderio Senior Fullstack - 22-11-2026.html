@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - João Figueiredo - Senior Fullstack Developer</title>
+  <style>
+    @page { size: A4; margin: 0; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+      font-size: 9.2pt;
+      line-height: 1.31;
+      color: #1a1a1a;
+      background: #e8e8e8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 12px;
+    }
+    .page {
+      width: 21cm;
+      min-height: 29.7cm;
+      background: #fff;
+      padding: 0.8cm 1.1cm;
+      box-shadow: 0 4px 20px rgba(0,0,0,.12);
+      margin-bottom: 24px;
+      position: relative;
+    }
+    header { text-align: center; margin-bottom: 8px; }
+    header h1 {
+      font-size: 20pt;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #111;
+    }
+    .contact-bar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 4px 16px;
+      margin-top: 4px;
+      font-size: 9pt;
+      color: #333;
+    }
+    .contact-bar a { color: #2563eb; text-decoration: none; }
+    .contact-bar a:hover { text-decoration: underline; }
+    .contact-bar span { white-space: nowrap; }
+    .section { margin-bottom: 4px; }
+    .section-heading {
+      font-size: 10.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #111;
+      border-bottom: 1.5px solid #111;
+      padding-bottom: 2px;
+      margin-bottom: 4px;
+    }
+    .summary-text { text-align: justify; }
+    .entry { margin-bottom: 3px; }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 2px 12px;
+    }
+    .entry-title {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #111;
+    }
+    .entry-subtitle {
+      font-size: 10pt;
+      color: #444;
+    }
+    .entry-date {
+      font-size: 9pt;
+      color: #666;
+      white-space: nowrap;
+    }
+    .entry-body { margin-top: 1px; }
+    .entry-body ul { padding-left: 16px; }
+    .entry-body ul li { margin-bottom: 0.5px; text-align: justify; }
+    .entry-tools { font-size: 9pt; color: #555; margin-top: 1px; }
+    .tech-line { margin-bottom: 2px; }
+    .tech-line strong { font-weight: 600; }
+    .edu-block { margin-bottom: 4px; }
+    .edu-block .entry-header { margin-bottom: 1px; }
+    .edu-details { font-size: 9pt; color: #444; padding-left: 0; list-style: none; }
+    .edu-details li { margin-bottom: 1px; }
+    @media print {
+      body { background: none; padding: 0; }
+      .page { box-shadow: none; margin: 0; padding: 0.8cm 1.1cm; width: 100%; min-height: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>João Figueiredo</h1>
+      <div class="contact-bar">
+        <span>São Paulo, Brazil</span>
+        <span><a href="mailto:defigueiredojoaopedro@gmail.com">defigueiredojoaopedro@gmail.com</a></span>
+        <span>+55 11 99004 0694</span>
+        <span><a href="https://www.figueiredojoaopedro02.com">figueiredojoaopedro02.com</a></span>
+        <span><a href="https://github.com/figueiredojoaopedro">github.com/figueiredojoaopedro</a></span>
+      </div>
+    </header>
+
+    <div class="section">
+      <div class="section-heading">Summary</div>
+      <p class="summary-text">Senior full-stack engineer with 5+ years of experience building scalable applications end-to-end with Node.js, TypeScript and React. Strong background in AWS architecture, relational and NoSQL databases, containers and CI/CD. Proven record delivering resilient microservices and REST APIs at an S&amp;P 500 company, applying Agile practices and generative AI to accelerate delivery.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">Experience</div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Software Engineer</span>
+          <span class="entry-date">June 2026 – Present</span>
+        </div>
+        <div class="entry-subtitle">XP Inc. · São Paulo, Brazil</div>
+        <div class="entry-body">
+          <ul>
+            <li>Develop and maintain scalable, high-performance microservices for XP's credit and lending products, processing over 7 million dollars per day.</li>
+            <li>Contribute across back-end and front-end layers using Node.js, React, PostgreSQL and MongoDB, within a Docker and Kubernetes environment.</li>
+            <li>Build resilience and fault-tolerance mechanisms for loan applications, implementing asynchronous retries, fallbacks and circuit breakers.</li>
+            <li>Implemented a new credit origination workflow using pension assets as collateral, automating 100% of the backoffice flow to sell the product.</li>
+            <li>Resolve production incidents through root-cause analysis and corrective fixes; improve observability via ProductSetup, an internal monitoring application.</li>
+            <li>Collaborate in an Agile/Scrum environment, translating business requirements into technical designs with Clean Architecture and Domain-Driven Design (DDD).</li>
+          </ul>
+          <div class="entry-tools"><strong>Technologies:</strong> Node.js, TypeScript, React, C#, .NET, Kafka, Kubernetes, Docker, SQL Server, PostgreSQL, MongoDB, Redis, RabbitMQ, CI/CD, Grafana, Dynatrace</div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Software Engineer</span>
+          <span class="entry-date">June 2022 – June 2026</span>
+        </div>
+        <div class="entry-subtitle">Automatic Data Processing – ADP · São Paulo, Brazil</div>
+        <div class="entry-body">
+          <ul>
+            <li>Designed and implemented end-to-end solutions with Node.js, TypeScript and React, building REST APIs, automating background jobs and delivering web interfaces for multiple internal teams.</li>
+            <li>Developed and deployed serverless applications on AWS with Lambda, API Gateway and DynamoDB, and implemented infrastructure as code with AWS CDK, reducing deployment issues by 97%.</li>
+            <li>Built a chatbot notification queue system (about 20,000 views per campaign) and automated ticket triage by seniority, tenure and expertise, eliminating 100% of manual work and reducing customer service requests by 60%.</li>
+            <li>Delivered React.js data-curation platforms and a scheduling app for managers, increasing team visibility and satisfaction by 60%.</li>
+            <li>Built a test suite and answer key to validate AI responses, decreasing production bugs by 95%, and integrated IBM Watson chatbots for Brazil and Chile (45%+ adoption, 97% client satisfaction).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">Projects</div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">casarnos.com.br</span>
+          <span class="entry-date"><a href="https://casarnos.com.br">casarnos.com.br</a></span>
+        </div>
+        <div class="entry-body">
+          <ul>
+            <li>SaaS for wedding gift and attendance lists with online invites, relational storage, authentication and containerized deployment.</li>
+          </ul>
+          <div class="entry-tools"><strong>Tools:</strong> Node.js, Next.js, TypeScript, PostgreSQL, AWS RDS, Docker, Tailwind CSS, Framer Motion, Vercel</div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">everlasting-mementos</span>
+        </div>
+        <div class="entry-body">
+          <ul>
+            <li>AI-first platform using RAG and autonomous agents, with NoSQL storage and streaming data, deployed to production.</li>
+          </ul>
+          <div class="entry-tools"><strong>Tools:</strong> Next.js, TypeScript, Docker, Firebase, NoSQL, AI, RAG, Agents, Tailwind CSS, Vercel</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">Technologies</div>
+      <div class="tech-line"><strong>Frontend:</strong> React, Next.js, TypeScript, JavaScript, Tailwind CSS, HTML5/CSS3, React Native</div>
+      <div class="tech-line"><strong>Backend:</strong> Node.js, NestJS, Express, REST APIs, C#, .NET, Python</div>
+      <div class="tech-line"><strong>Databases:</strong> PostgreSQL, Microsoft SQL Server, MongoDB, DynamoDB, Redis</div>
+      <div class="tech-line"><strong>Cloud &amp; DevOps:</strong> AWS (Lambda, API Gateway, S3, DynamoDB, EC2, CloudWatch, EventBridge, CDK), Azure, Docker, Kubernetes, Kafka, RabbitMQ, CI/CD, Vercel</div>
+      <div class="tech-line"><strong>Quality &amp; Practices:</strong> TDD, unit and integration testing, code review, SOLID, Microservices, Clean Architecture, DDD, Agile, Scrum, Spec-Driven Development, GenAI, RAG, Agents</div>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">Education</div>
+      <div class="edu-block">
+        <div class="entry-header">
+          <span class="entry-title">FIAP</span>
+          <span class="entry-date">Jul 2025 – May 2026</span>
+        </div>
+        <div class="entry-subtitle">Postgraduate in Fullstack Development</div>
+        <ul class="edu-details">
+          <li>DDD, Microservices, Clean Architecture, TypeScript, Node.js, Databases, Software Quality, DevOps, Cloud Architecture</li>
+        </ul>
+      </div>
+      <div class="edu-block">
+        <div class="entry-header">
+          <span class="entry-title">Universidade Anhembi Morumbi</span>
+          <span class="entry-date">Jul 2021 – Jun 2025</span>
+        </div>
+        <div class="entry-subtitle">BS in Computer Science</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -85,11 +85,16 @@ casarnos.com.br casarnos.com.br 2
 list, also online invites for their ceremony.
 ◦ Tools: Node.js, Next.JS. Postgres, resend, AWS RDS, Vercel, Docker, SQL, tailwind.css and framer-motion.
 
+everlasting-mementos:
+nextjs, vercel, docker, firebase, nosql, AI, RAG, Agents, product design, tailwind.css, data streaming, deploy to production.
+
 Technologies
-Languages: C#, SQL, JavaScript, NodeJS, Python
+Languages: C#, SQL, JavaScript, TypeScript, NodeJS, Python
 Technologies: Next.js, React, Node.js, Microsoft SQL Server, Postgres, Dynamo DB, AWS Lambda, S3, AWS, Redis
 CDK, IBM Watson, AWS API Gateway, AWS Code Build, git, MongoDB, Docker, Cloudant, IBM logs, AWS
-Cloudwatch, AWS Event Bridge.
+Cloudwatch, AWS Event Bridge, AWS EC2, UI/UX, React Native, DevOps, Clean Architecture, Postgres, NestJS, AI, GenAI, RAG, Agents, ai skills.
+Good practices: DDD, TDD, CI/CD, SOLID, Agile, SCRUM
+
 Education
 Universidade Anhembi Morumbi
 BS in Computer Science
